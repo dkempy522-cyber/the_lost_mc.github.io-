@@ -1,1 +1,140 @@
 # the_lost_mc.github.io-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost MC - San Andreas | YouTube & FiveM</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #e0e0e0;
+            background-color: #0a0a0a;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('lost-mc-logo.png'); /* ← Replace with your image path or URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.5) contrast(1.1); /* Darkens slightly for text readability */
+            z-index: -2;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.65); /* Semi-transparent black overlay */
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0.2em 0;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: #d32f2f; /* Red accent for MC vibe */
+            text-shadow: 3px 3px 10px #000;
+        }
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 2em;
+            color: #bbb;
+        }
+        .logo-placeholder {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 1.5em;
+            background: url('lost-mc-logo.png') center/contain no-repeat; /* Optional small logo version */
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 2em 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #b71c1c, #7f0000);
+            border: 3px solid #d32f2f;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(183,28,28,0.6);
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+        }
+        .btn.discord {
+            background: linear-gradient(135deg, #5865F2, #4752C4);
+            border-color: #7289da;
+        }
+        .btn.discord:hover {
+            background: linear-gradient(135deg, #7289da, #5865F2);
+            box-shadow: 0 12px 25px rgba(88,101,242,0.6);
+        }
+        footer {
+            margin-top: auto;
+            padding: 2em 0;
+            font-size: 1rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <!-- Optional: small centered logo version (comment out if not wanted) -->
+        <!-- <div class="logo-placeholder"></div> -->
+
+        <h1>The Lost MC</h1>
+        <p class="subtitle">San Andreas Chapter • President</p>
+
+        <div class="links">
+            <a href="https://youtube.com/@the_lost_mc_prez12" target="_blank" class="btn">Watch on YouTube</a>
+            <a href="https://discord.gg/bxV9jw8M2Z" target="_blank" class="btn discord">Join FiveM Server Discord</a>
+        </div>
+
+        <p style="font-size: 1.3rem; max-width: 700px; margin: 1.5em auto;">
+            Ride with The Lost MC in San Andreas. GTA V / FiveM RP content, bike gang life, missions, and outlaw brotherhood. 
+            Hit subscribe on YouTube and jump in the server to roll with the club.
+        </p>
+
+        <footer>
+            © The Lost MC San Andreas • 1%er • Outlaws Forever
+        </footer>
+    </div>
+</body>
+</html>
